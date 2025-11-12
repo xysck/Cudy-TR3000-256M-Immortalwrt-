@@ -211,6 +211,7 @@ jobs:
           cat > release.txt << EOF
           ## 📦 OpenWrt Firmware Release
 
+          ** 基于 immortalwrt openwrt 构建的 cudy tr3000 v1 256M 版本固件
           **🏷️ Release:** $RELEASE_TAG
           **🌿 Branch:** $REPO_BRANCH
           **📱 Device:** $(cat openwrt/DEVICE_NAME 2>/dev/null || echo 'N/A')
