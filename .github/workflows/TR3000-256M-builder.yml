@@ -1,4 +1,4 @@
-name: OpenWrt Builder
+name: Cudy TR3000-256M OpenWrt Builder
 
 on:
   repository_dispatch:
