@@ -1,9 +1,9 @@
-# 项目说明
+## 项目说明
 - 设备型号：Cudy TR3000
 - 固件默认管理地址：`192.168.1.1` 默认用户：`root` 默认密码：`password`
 - 源码：https://github.com/padavanonly/immortalwrt-mt798x-6.6
 - 云编译来源：https://github.com/haiibo/OpenWrt
-# USB供电开关方法
+## USB供电开关方法
 If you want to turn off USB Power, run
 
 ```bash
@@ -24,7 +24,7 @@ third-party packages:
 - kmod-usb-net-cdc-ether
 - kmod-usb-net-rndis
 
-## Credits
+## 感谢
 
 - [Microsoft Azure](https://azure.microsoft.com)
 - [GitHub Actions](https://github.com/features/actions)
@@ -36,6 +36,6 @@ third-party packages:
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
 
-## License
+## 云编译源
 
 [MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)
