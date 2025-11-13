@@ -1,8 +1,9 @@
-
-# Actions-OpenWrt
-
-Build from https://github.com/padavanonly/immortalwrt-mt798x-6.6
-
+# 项目说明
+- 设备型号：Cudy TR3000
+- 固件默认管理地址：`192.168.1.1` 默认用户：`root` 默认密码：`password`
+- 源码：https://github.com/padavanonly/immortalwrt-mt798x-6.6
+- 云编译来源：https://github.com/haiibo/OpenWrt
+# USB供电开关方法
 If you want to turn off USB Power, run
 
 ```bash
