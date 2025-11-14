@@ -4,8 +4,7 @@
 - 源码：https://github.com/padavanonly/immortalwrt-mt798x-6.6
 - 云编译来源：https://github.com/haiibo/OpenWrt
 ## USB供电开关方法
-If you want to turn off USB Power, run
-
+如果你想关闭USB电源, 需要运行如下命令：
 ```bash
 echo 0 > /sys/class/gpio/modem_power/value
 ```
