@@ -1,4 +1,4 @@
-name:Cudy TR3000-128M-Ubootmod Builder
+name:Cudy TR3000-128M-ubootmod Builder
 
 on:
   repository_dispatch:
