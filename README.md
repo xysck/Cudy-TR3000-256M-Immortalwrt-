@@ -11,8 +11,8 @@
 ```sh
 # set ubi to 122M
 # sed -i 's/reg = <0x5c0000 0x7000000>;/reg = <0x5c0000 0x7a40000>;/' target/linux/mediatek/dts/mt7981b-cudy-tr3000-v1-ubootmod.dts
-
-## USB 供电开关
+---
+## USB 供电控制
 - 如果你想关闭USB电源, 需要运行如下命令：
 ```bash
 echo 0 > /sys/class/gpio/modem_power/value
