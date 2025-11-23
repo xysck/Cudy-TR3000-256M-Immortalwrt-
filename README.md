@@ -6,6 +6,7 @@
 - 云编译来源：https://github.com/haiibo/OpenWrt
 - 本云编译已打上USB供电补丁，默认开启usb供电
 - 集成第三方软件包：luci-app-OpenClash、luci-app-Bandix、luci-theme-aurora、luci-app-upnp、kmod-usb-net-cdc-ether、kmod-usb-net-rndis
+- 本编译共有3个版本固件，分别为256M、128M、ubootmod 固件
 ## 大分区 ubootmod 固件
 本仓库默认编译的 ubootmod 固件为 112M 分区，若你想编译 122M 分区固件，请将 `diy-part2.sh` 中取消以下注释：
 ```sh
