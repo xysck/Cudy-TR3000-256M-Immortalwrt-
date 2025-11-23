@@ -1,13 +1,18 @@
 ## 项目说明
-编译自 https://github.com/padavanonly/immortalwrt-mt798x-6.6，并兼容 Cudy Tr3000 128M 新的 flash。
+编译自 https://github.com/padavanonly/immortalwrt-mt798x-6.6 ，兼容 Cudy Tr3000 128M 最新版 flash。
 - 设备型号：Cudy TR3000
 - 固件默认管理地址：`192.168.1.1` 默认用户：`root` 默认密码：`password`
 - 源码：https://github.com/padavanonly/immortalwrt-mt798x-6.6
 - 云编译来源：https://github.com/haiibo/OpenWrt
 - 本云编译已打上USB供电补丁，默认开启usb供电
 - 集成第三方软件包：luci-app-OpenClash、luci-app-Bandix、luci-theme-aurora、luci-app-upnp、kmod-usb-net-cdc-ether、kmod-usb-net-rndis
-- ubootmod版本适用于112m分区，刷三分区uboot后选112m刷入t-rndis
-## USB供电开关方法
+## 大分区 ubootmod 固件
+本仓库默认编译的 ubootmod 固件为 112M 分区，若你想编译 122M 分区固件，请将 `diy-part2.sh` 中取消以下注释：
+```sh
+# set ubi to 122M
+# sed -i 's/reg = <0x5c0000 0x7000000>;/reg = <0x5c0000 0x7a40000>;/' target/linux/mediatek/dts/mt7981b-cudy-tr3000-v1-ubootmod.dts
+
+## USB 供电开关
 - 如果你想关闭USB电源, 需要运行如下命令：
 ```bash
 echo 0 > /sys/class/gpio/modem_power/value
@@ -16,7 +21,6 @@ echo 0 > /sys/class/gpio/modem_power/value
 ```bash
 echo 1 > /sys/class/gpio/modem_power/value
 ```
-
 ## 集成软件方法
 由于 Github 储存限制，若你想在固件中集成 sing-box 或者 xray-core 这种大型软件包，建议使用预编译文件，即在编译过程中加入已经编译好现成软件包，而非从源码构建。否则你应该会碰到超长编译时间 + 超出 Action 储存 (14~16G左右)。
 这里举个例子，在 diy-part2.sh 脚本中写入。
